@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0
+  padding: 0
+}
+
+body {
+  background-color: #grey;
+  font-size: 120%;
+}
+
+h1, h2, h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p, ul, li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-size: 18px
+}
+
+li {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+li span {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 60px;
+  border-bottom: 5px dotted #000;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin-top: 40px
+  margin-bottom: 40px
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: rgba(0,0,0,0.2) 0 0 8px;
+}
+
+.row {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 40px;
+  float: left;
+}
+
+.personal-data {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.personal-data span {
+  display: block;
+}
+
+.profile-image {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  float: right;
+  border: 10px solid #fff;
+  box-shadow: rgba(0,0,0,0.2) 0 2px 5px;
+  transform: rotate(10deg);
+}
