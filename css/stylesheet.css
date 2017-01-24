@@ -20,10 +20,26 @@ align-items: center; /* align vertical */
 
 }
 
+.cv_left{
+  float: left;
+  width: 30%;
+  text-align: right;
+  height: 100%;
+  background-color: grey;
+}
+
+.cv_right{
+  float: right;;
+  width: 70%;
+  text-align: left;;
+  height: 100%;
+  background-color: orange;
+}
+
 th {
 border-bottom: 3px solid black;
 font-size: 72px;
-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: "MyriadPro", Helvetica, Arial, sans-serif;
 }
 
 
