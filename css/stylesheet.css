@@ -24,6 +24,9 @@ body.cv .block-empty:before  {
 div.date {
   width: 30%;
   float: left;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .date p, .study-info h4 {
@@ -33,6 +36,8 @@ div.date {
 div.study-info {
   width:70%;
   float:left;
+  font-family: "Lato";
+  font-size: 18px;
 }
 
 body.cv .teaser {
@@ -45,13 +50,18 @@ body.cv .title {
   left: 5%;
   top: 50%;
   margin:0;
+  font-family: "Pompiere";
+  font-size: 60px;
+  color: #fd5f00;
 }
 
 body.cv .name {
   position: absolute;
   top: 50%;
   right: 5%;
-
+  font-family: "Pompiere";
+  font-size: 60px;
+  color: #fd5f00;
 }
 
 body.cv .carrier-skill-container .main {
@@ -84,6 +94,19 @@ body.cv .left-content{
 
 body.cv .right-content{
   float: left;
+}
+
+h3{
+  font-family: "Lato";
+  font-size: 18px;
+  color: #fd5f00;
+}
+
+h4{
+  font-family: "Lato";
+  font-size: 18px;
+  color: #fd5f00;
+  font-weight: bold;
 }
 /*
 ABOUT
