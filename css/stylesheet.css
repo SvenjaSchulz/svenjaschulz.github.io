@@ -1,3 +1,361 @@
+body.cv .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body.cv .block-filled:before  {
+  content: "\25A0";
+}
+
+body.cv .block-empty:before  {
+  content: "\25A1";
+}
+
+[class*="block"] {
+  font-size: 30px;
+}
+
+[class*="item"] {
+  display: inline-block;
+  width: 120px;
+  vertical-align: super;
+}
+
+div.date {
+  width: 30%;
+  float: left;
+}
+
+.date p, .study-info h4 {
+  margin: 0;
+}
+
+div.study-info {
+  width:70%;
+  float:left;
+}
+
+body.cv .teaser {
+  height: 200px;
+  position: relative;
+}
+
+body.cv .title {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  margin:0;
+}
+
+body.cv .name {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+
+}
+
+body.cv .carrier-skill-container .main {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: green;
+  position: relative;
+  border: 2.5px solid black;
+  box-sizing: border-box;
+}
+
+body.cv .img-mid {
+  position: absolute;
+  left: 40%;
+  border-radius: 50%;
+  // margin-left: calc(75% - 100px);
+  background-image: url("../images/schulz_svenja.jpg");
+  background-size: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
+body.cv .left-content{
+  float: left;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+}
+
+body.cv .right-content{
+  float: left;
+}
+/*
+ABOUT
+*/
+
+body.about_me .container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body.about_me .teaser {
+  position: relative;
+}
+
+body.about_me .title {
+  position: absolute;
+  font-family: "Pompiere";
+  font-size: 60px;
+  color: #fd5f00;
+}
+
+body.about_me .img-right {
+  border-radius: 50%;
+  margin-left: calc(80% - 100px);
+  background-image: url("../images/schulz_svenja.jpg");
+  background-size: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+
+}
+
+body.about_me .content {
+
+}
+
+body.about_me .main-content {
+  height: 300px;
+  width: 80%;
+  float:left;
+  text-align: right;
+  border-right: 2.5px solid black;
+
+}
+
+body.about_me .sidebar {
+  height:250px;
+  float:left;
+  width:25%;
+  box-sizing: border-box;
+}
+/*
+HOME
+*/
+
+body.home h1 {
+  padding-bottom: 5px;
+  border-bottom: 5px solid black;
+  font-family: "Pompiere";
+  font-size: 60px;
+}
+
+body.home ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.home li {
+  // float: left;
+}
+
+body.home li a {
+  display: block;
+  padding: 8px;
+  font-family: "Lato";
+  font-size: 22px;
+}
+
+body.home nav {
+  position: relative;
+  top: 50%;
+  left: 10%;
+  width:30rem;
+}
+
+
+
+body.home .flex-item li {
+  text-align: center;
+}
+
+body.home .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+body.home .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+body.home .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+body.home .dropdown-content:hover {
+  display: inline-block;
+}
+
+body.home .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Lato";
+    font-size: 18px;
+}
+
+body.home .dropdown-content ul {
+  text-align: center;
+}
+
+
+body.home .dropdown-content li {
+  width:100%;
+}
+
+body.home .dropdown-content a:hover {background-color: #f1f1f1}
+
+body.home .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body.home .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*
+Grafik
+*/
+
+nav.side ul {
+  list-style-type: none;
+  // display:flex;
+  // width:70vh;
+  height:45px;
+  position:fixed;
+  background:#4c4c4c;
+  -webkit-transform-origin: left top;
+  -webkit-transform:rotate(-90deg) translateX(-100%);
+  -webkit-padding-start: 20px;
+  top: 12.5%;
+}
+
+nav.side ul li {
+  // float: left;
+  // flex-grow: 1;
+  margin-right:20px;
+  float:right;
+  height:100%;
+  line-height:45px;
+}
+
+nav.side ul li:before {
+  content:"|";
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+nav.side ul li:last-child:before {
+  content:"";
+}
+
+nav.side .dropdown-content {
+  display:none;
+}
+
+nav.side .dropdown-content:hover {
+  display: inline-block;
+  transform: rotate(90deg);
+  position: relative;
+}
+
+nav.side .dropdown-content a:hover {
+  display: block;
+}
+
+nav.side .dropdown-content ul {
+  list-style-type: none;
+  // display:flex;
+  // width:70vh;
+  height:45px;
+  position:fixed;
+  background:#4c4c4c;
+  // -webkit-transform-origin: left top;
+  -webkit-transform:rotate(-90deg) translateX(-100%);
+  -webkit-padding-start: 20px;
+  top: 12.5%;
+}
+
+nav.side .dropdown-content ul li {
+  // float: left;
+  // flex-grow: 1;
+  margin-right:20px;
+  float:right;
+  height:100%;
+  line-height:45px;
+}
+
+nav.side [class*="item"] {
+  width:180px;
+}
+/*
+Generic
+*/
+
+.half {
+  width: 50%;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  flex-grow: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+/*
+  CSS TRICKS
+ */
+
+
+circle {
+  fill: #ddd;
+  stroke: #0074d9;
+  stroke-width: 50;
+  stroke-dasharray: 0 158;
+  transition: stroke-dasharray .3s ease;
+}
+
+svg {
+  margin: 0 auto;
+  transform: rotate(-90deg);
+  background: #ddd;
+  border-radius: 50%;
+  display: block;
+}
+
+/* start */
+
 .profile-image {
   max-width: 100%;
 	height: auto;
@@ -15,31 +373,14 @@
   text-align: center;
   height: 100%;
   display: flex;
-justify-content: center; /* align horizontal */
-align-items: center; /* align vertical */
-
-}
-
-.cv_left{
-  float: left;
-  width: 30%;
-  text-align: right;
-  height: 100%;
-  background-color: grey;
-}
-
-.cv_right{
-  float: right;;
-  width: 70%;
-  text-align: left;;
-  height: 100%;
-  background-color: orange;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
 
 th {
-border-bottom: 3px solid black;
-font-size: 72px;
-font-family: "Wire One", Helvetica, Arial, sans-serif;
+  border-bottom: 3px solid black;
+  font-size: 80px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
