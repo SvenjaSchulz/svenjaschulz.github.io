@@ -356,6 +356,10 @@ Generic
   clear: both;
 }
 
+body.cv .clear {
+  clear: both;
+  height: 30px;
+}
 /*
   CSS TRICKS
  */
@@ -417,4 +421,21 @@ a {
   text-decoration: none;
   font-size: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body.contact .container {
+  margin:0 auto;
+  width: 80%;
+  font-family: "Lato";
+}
+
+body.contact h1{
+  font-family: "Pompiere";
+  font-size: 60px;
+  color: #fd5f00;
+}
+
+body.contact .send-mail{
+  width: 459px;
+  text-align: center;
 }
