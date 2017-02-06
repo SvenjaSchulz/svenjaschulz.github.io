@@ -1,166 +1,3 @@
-body.cv .container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-body.cv .block-filled:before  {
-  content: "\25A0";
-}
-
-body.cv .block-empty:before  {
-  content: "\25A1";
-}
-
-[class*="block"] {
-  font-size: 30px;
-}
-
-[class*="item"] {
-  display: inline-block;
-  width: 120px;
-  vertical-align: super;
-}
-
-div.date {
-  width: 30%;
-  float: left;
-  font-family: "Lato";
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.date p, .study-info h4 {
-  margin: 0;
-}
-
-div.study-info {
-  width:70%;
-  float:left;
-  font-family: "Lato";
-  font-size: 18px;
-}
-
-body.cv .teaser {
-  height: 200px;
-  position: relative;
-}
-
-body.cv .title {
-  position: absolute;
-  left: 5%;
-  top: 50%;
-  margin:0;
-  font-family: "Pompiere";
-  font-size: 60px;
-  color: #fd5f00;
-}
-
-body.cv .name {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  font-family: "Pompiere";
-  font-size: 60px;
-  color: #fd5f00;
-}
-
-body.cv .carrier-skill-container .main {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: green;
-  position: relative;
-  border: 2.5px solid black;
-  box-sizing: border-box;
-}
-
-body.cv .img-mid {
-  position: absolute;
-  left: 40%;
-  border-radius: 50%;
-  // margin-left: calc(75% - 100px);
-  background-image: url("../images/schulz_svenja.jpg");
-  background-size: 200px auto;
-  width: 200px;
-  height: 200px;
-  background-repeat: no-repeat;
-}
-
-body.cv .left-content{
-  float: left;
-  border-right: 1px solid black;
-  box-sizing: border-box;
-}
-
-body.cv .right-content{
-  float: left;
-}
-
-h3{
-  font-family: "Lato";
-  font-size: 18px;
-  color: #fd5f00;
-}
-
-h4{
-  font-family: "Lato";
-  font-size: 18px;
-  color: #fd5f00;
-  font-weight: bold;
-}
-/*
-ABOUT
-*/
-
-body.about_me .container {
-  width: 80%;
-  margin: 0 auto;
-  font-family: "Lato";
-  font-size: 18px;
-  line-height: 1.4;
-}
-
-body.about_me .teaser {
-  position: relative;
-}
-
-body.about_me .title {
-  position: absolute;
-  font-family: "Pompiere";
-  font-size: 60px;
-  color: #fd5f00;
-}
-
-body.about_me .img-right {
-  border-radius: 50%;
-  margin-left: calc(80% - 100px);
-  background-image: url("../images/schulz_svenja.jpg");
-  background-size: 200px auto;
-  width: 200px;
-  height: 200px;
-  background-repeat: no-repeat;
-
-}
-
-body.about_me .content {
-
-}
-
-body.about_me .main-content {
-  height: 300px;
-  width: 80%;
-  float:left;
-  text-align: right;
-  border-right: 2.5px solid black;
-
-}
-
-body.about_me .sidebar {
-  height:250px;
-  float:left;
-  width:25%;
-  box-sizing: border-box;
-}
 /*
 HOME
 */
@@ -170,6 +7,7 @@ body.home h1 {
   border-bottom: 5px solid black;
   font-family: "Pompiere";
   font-size: 60px;
+  margin-bottom: 12px;
 }
 
 body.home ul {
@@ -195,8 +33,6 @@ body.home nav {
   left: 10%;
   width:30rem;
 }
-
-
 
 body.home .flex-item li {
   text-align: center;
@@ -242,12 +78,13 @@ body.home .dropdown-content ul {
   text-align: center;
 }
 
-
 body.home .dropdown-content li {
   width:100%;
 }
 
-body.home .dropdown-content a:hover {background-color: #f1f1f1}
+body.home .dropdown-content a:hover {
+  background-color: #f1f1f1
+}
 
 body.home .dropdown:hover .dropdown-content {
     display: block;
@@ -255,6 +92,217 @@ body.home .dropdown:hover .dropdown-content {
 
 body.home .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+/*
+ABOUT
+*/
+
+body.about_me .container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body.about_me .teaser {
+  position: relative;
+}
+
+body.about_me .title {
+  position: absolute;
+  font-family: "Pompiere";
+  font-size: 60px;
+  color: #fd5f00;
+}
+
+body.about_me .img-right {
+  border-radius: 50%;
+  margin-left: calc(80% - 100px);
+  background-image: url("../images/schulz_svenja.jpg");
+  background-size: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
+body.about_me .content {
+
+}
+
+body.about_me .main-content {
+  width: 80%;
+  float:left;
+  text-align: left;;
+  border-left: 1px solid black;
+  padding: 8px;
+
+}
+
+body.about_me .sidebar {
+  height:250px;
+  float:left;
+  width:25%;
+  box-sizing: border-box;
+}
+
+/*
+CV
+*/
+
+body.cv .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body.cv .block-filled:before  {
+  content: "\25A0";
+  color: #fd5f00;
+}
+
+body.cv .block-empty:before  {
+  content: "\25A1";
+  color: #fd5f00;
+}
+
+[class*="block"] {
+  font-size: 30px;
+}
+
+[class*="item"] {
+  display: inline-block;
+  padding: 0 20px 0 0 !important;
+  vertical-align: super;
+}
+
+body .language-item {
+  font-family: "Lato";
+  font-size: 18px;
+}
+
+div.date {
+  width: 30%;
+  float: left;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.date p, .study-info h4 {
+  margin: 0;
+}
+
+div.study-info {
+  width:70%;
+  float:left;
+  font-family: "Lato";
+  font-size: 18px;
+}
+
+body.cv .teaser {
+  height: 200px;
+  position: relative;
+}
+
+body.cv .title {
+  position: absolute;
+  top: 50%;
+  margin:0;
+  font-family: "Pompiere";
+  font-size: 50px;
+  color: #fd5f00;
+}
+
+body.cv .name {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  font-family: "Pompiere";
+  font-size: 60px;
+  color: #fd5f00;
+}
+
+body.cv .personal-skill-container {
+  font-family: "Lato";
+  font-size: 18px;
+  
+}
+
+body.cv .carrier-skill-container .main {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: green;
+  position: relative;
+  border: 2.5px solid black;
+  box-sizing: border-box;
+}
+
+body.cv .img-mid {
+  position: absolute;
+  left: 40%;
+  border-radius: 50%;
+  // margin-left: calc(75% - 100px);
+  background-image: url("../images/schulz_svenja.jpg");
+  background-size: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
+body.cv .left-content{
+  float: left;
+}
+
+body.cv .right-content{
+  float: left;
+  border-left: 1px solid black;
+  box-sizing: border-box;
+  padding-left: 8px;
+}
+
+body.cv .mb {
+  margin-bottom: 5px;
+}
+
+body.cv [class*="-item"]  {
+  width:100px;
+}
+
+h3{
+  font-family: "Lato";
+  font-size: 18px;
+  color: #fd5f00;
+}
+
+h4{
+  font-family: "Lato";
+  font-size: 18px;
+  color: #fd5f00;
+  font-weight: bold;
+}
+
+/* PIE CHART */
+.chart {
+  display: inline-block;
+  margin: 40px auto 20px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.chart > span {
+  position: absolute;
+  left: 0%;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  font-family: "lato";
+  font-size: 13px;
+}
+
+.chart canvas {
+  height: 200px;
 }
 
 /*
