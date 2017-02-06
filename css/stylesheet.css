@@ -226,7 +226,7 @@ body.cv .name {
 body.cv .personal-skill-container {
   font-family: "Lato";
   font-size: 18px;
-  
+
 }
 
 body.cv .carrier-skill-container .main {
@@ -380,6 +380,51 @@ nav.side .dropdown-content ul li {
 nav.side [class*="item"] {
   width:180px;
 }
+
+/*
+Contact
+*/
+body.contact .contact-text{
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 1.4;
+
+}
+
+body.contact img{
+    width: 200px;
+
+}
+
+body.contact .container {
+  margin:0 auto;
+  width: 80%;
+  font-family: "Lato";
+
+}
+
+body.contact h1{
+  font-family: "Pompiere";
+  font-size: 60px;
+  color: #fd5f00;
+
+}
+
+body.contact .send-mail{
+  width: 200px;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+body.contact .send-mail a{
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 18px;
+  color: #fd5f00;
+
+}
+
 /*
 Generic
 */
@@ -469,21 +514,4 @@ a {
   text-decoration: none;
   font-size: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-body.contact .container {
-  margin:0 auto;
-  width: 80%;
-  font-family: "Lato";
-}
-
-body.contact h1{
-  font-family: "Pompiere";
-  font-size: 60px;
-  color: #fd5f00;
-}
-
-body.contact .send-mail{
-  width: 459px;
-  text-align: center;
 }
