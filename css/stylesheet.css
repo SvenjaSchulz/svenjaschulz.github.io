@@ -175,7 +175,7 @@ body.cv .block-empty:before  {
 
 [class*="item"] {
   display: inline-block;
-  padding: 0 20px 0 0 !important;
+  padding: 0 40px 0 0 !important;
   vertical-align: super;
 }
 
@@ -190,6 +190,7 @@ div.date {
   font-family: "Lato";
   font-size: 18px;
   font-weight: bold;
+  line-height: 1.4;
 }
 
 .date p, .study-info h4 {
@@ -201,6 +202,7 @@ div.study-info {
   float:left;
   font-family: "Lato";
   font-size: 18px;
+  line-height: 1.4;
 }
 
 body.cv .teaser {
@@ -256,13 +258,15 @@ body.cv .img-mid {
 
 body.cv .left-content{
   float: left;
+  margin-top: 10px;
 }
 
 body.cv .right-content{
   float: left;
   border-left: 1px solid black;
   box-sizing: border-box;
-  padding-left: 8px;
+  padding-left: 40px;
+  margin-top: 10px;
 }
 
 body.cv .mb {
@@ -427,7 +431,7 @@ Generic
 */
 
 .half {
-  width: 50%;
+  width: 49%;
 }
 
 .center {
