@@ -127,16 +127,13 @@ body.about_me .img-right {
   background-repeat: no-repeat;
 }
 
-body.about_me .content {
-
-}
-
 body.about_me .main-content {
   width: 80%;
   float:left;
-  text-align: left;;
+  text-align: left;
   border-left: 1px solid black;
   padding: 8px;
+  margin-left: 100px;
 
 }
 
@@ -145,6 +142,12 @@ body.about_me .sidebar {
   float:left;
   width:25%;
   box-sizing: border-box;
+}
+
+body.about_me .blockquote{
+  padding-top: 100px;
+  padding-bottom: 10px;
+  height: 200px;
 }
 
 /*
@@ -219,7 +222,7 @@ body.cv .name {
   top: 50%;
   right: 5%;
   font-family: "Pompiere";
-  font-size: 60px;
+  font-size: 50px;
   color: #fd5f00;
 }
 
@@ -270,6 +273,11 @@ body.cv [class*="-item"]  {
   width:100px;
 }
 
+body.cv .clear {
+  clear: both;
+  height: 30px;
+}
+
 h3{
   font-family: "Lato";
   font-size: 18px;
@@ -306,84 +314,73 @@ h4{
 }
 
 /*
-Grafik
+Graphic
 */
 
-nav.side ul {
-  list-style-type: none;
-  // display:flex;
-  // width:70vh;
-  height:45px;
-  position:fixed;
-  background:#4c4c4c;
-  -webkit-transform-origin: left top;
-  -webkit-transform:rotate(-90deg) translateX(-100%);
-  -webkit-padding-start: 20px;
-  top: 12.5%;
+body.graphic .row {
+  height: 63%;
 }
 
-nav.side ul li {
-  // float: left;
-  // flex-grow: 1;
-  margin-right:20px;
-  float:right;
+body.graphic .row .two_thirds, body.graphic .row .two_thirds + .third {
+  height: 500px;
+}
+
+body.graphic .row .third-margin {
+  height: 250px;
+}
+
+body.graphic .image_parent img {
   height:100%;
-  line-height:45px;
 }
 
-nav.side ul li:before {
-  content:"|";
-  font-size: 25px;
-  padding-right: 20px;
+/*
+Typography
+*/
+
+body.typography .third-margin .image_parent {
+  margin-bottom: 20px;
 }
 
-nav.side ul li:last-child:before {
-  content:"";
+body.typography .third-margin .image_parent:last-child {
+  margin-bottom: 0;
 }
 
-nav.side .dropdown-content {
-  display:none;
+body.typography .third-margin.one-image{
+  height: 750px;
 }
 
-nav.side .dropdown-content:hover {
-  display: inline-block;
-  transform: rotate(90deg);
-  position: relative;
+body.typography .third-margin.two-images{
+  height: calc(750px - 20px);
 }
 
-nav.side .dropdown-content a:hover {
-  display: block;
+body.typography .third-margin.three-images{
+  height: calc(750px - 40px);
 }
 
-nav.side .dropdown-content ul {
-  list-style-type: none;
-  // display:flex;
-  // width:70vh;
-  height:45px;
-  position:fixed;
-  background:#4c4c4c;
-  // -webkit-transform-origin: left top;
-  -webkit-transform:rotate(-90deg) translateX(-100%);
-  -webkit-padding-start: 20px;
-  top: 12.5%;
+body.typography .image_parent img {
+  height: 100%;
 }
 
-nav.side .dropdown-content ul li {
-  // float: left;
-  // flex-grow: 1;
-  margin-right:20px;
-  float:right;
-  height:100%;
-  line-height:45px;
+/*
+Photography
+*/
+
+body.photography .image_parent.grid.third-margin {
+  height: 250px;
 }
 
-nav.side [class*="item"] {
-  width:180px;
+body.photography .image_parent.grid.third-margin img{
+  height: 250px;
+}
+
+body.photography .image_parent.grid.full-width {
+  height:400px;
 }
 
 /*
 Contact
 */
+
 body.contact .contact-text{
   font-family: "Lato";
   font-size: 18px;
@@ -392,7 +389,7 @@ body.contact .contact-text{
 }
 
 body.contact img{
-    width: 200px;
+    width: 160px;
 
 }
 
@@ -405,13 +402,13 @@ body.contact .container {
 
 body.contact h1{
   font-family: "Pompiere";
-  font-size: 60px;
+  font-size: 50px;
   color: #fd5f00;
 
 }
 
 body.contact .send-mail{
-  width: 200px;
+  width: 160px;
   text-align: center;
   margin-top: 50px;
 
@@ -442,17 +439,177 @@ Generic
 }
 
 .flex-item {
-  flex-grow: 1;
+  /*flex-grow: 1;*/
 }
 
 .clear {
   clear: both;
 }
 
-body.cv .clear {
-  clear: both;
-  height: 30px;
+.full-width {
+  width: 100%;
 }
+
+.grid > img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.third {
+  width: 33.3%;
+}
+
+.third-margin {
+  width: calc(33.3% - 13px);
+}
+
+.two_thirds {
+  width: calc(66.66% - 20px);
+  margin-right: 20px;
+}
+
+.row {
+  margin-bottom: 20px;
+  width:100%;
+  height:100%;
+}
+
+
+.image_parent {
+  position: relative;
+  overflow:hidden;
+  border: 1px solid grey;
+  border-radius: 25px;
+  box-sizing: border-box;
+
+}
+
+.image_parent img {
+  width:100%;
+}
+
+.image_parent .caption{
+  // display: none;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0%;
+  width:100%;
+  height: 50px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.image_parent:hover .caption {
+  // display: block;
+  visibility: visible;
+  opacity: 1;
+  background-color: grey;
+  padding-top: 35px;
+  font-family: "lato";
+  font-size: 18px;
+
+}
+
+div.third-margin:nth-last-of-type(2) {
+  margin: 0 20px;
+}
+
+.image_parent.grid.full-width.margin-top {
+  margin-top: 20px;
+}
+
+.left {
+  float: left;
+
+}
+
+.height-one-third {
+  height: 33.3%;
+}
+
+.height-two-third {
+  height: 66.6%;
+}
+
+.height-one-fifth {
+  height: 20%;
+}
+
+.height-two-fifth {
+  height: 40%;
+}
+
+h3{
+  font-family: "Lato";
+  font-size: 18px;
+  color: #fd5f00;
+}
+
+h4{
+  font-family: "Lato";
+  font-size: 18px;
+  color: #fd5f00;
+  font-weight: bold;
+}
+
+html, body{
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin:0;
+  font-family: "Pompiere";
+  font-size: 50px;
+  color: #fd5f00;
+  padding-bottom: 20px;
+}
+
+/* NAV SIDE */
+
+nav.side{
+  transform: rotate(-90deg) translate(-50%, 0);
+  transform-origin: left top;
+
+}
+
+nav.side .dropdown-content{
+  display: none;
+}
+
+
+nav.side ul .dropdown{
+  margin: 0;
+  padding: 0 20px 0 0;
+}
+nav.side ul li{
+  display: block;
+
+}
+
+nav.side ul .dropdown:hover .dropdown-content{
+  display: inline;
+}
+
+nav.side ul .dropdown-content{
+  position: absolute;
+
+}
+
+nav ul{
+  -webkit-padding-start: 0;
+}
+
+
 /*
   CSS TRICKS
  */
@@ -487,31 +644,9 @@ svg {
   width: 50%;
 }
 
-.left {
-  float: left;
-  width: 50%;
-  text-align: center;
-  height: 100%;
-  display: flex;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
-}
-
-th {
-  border-bottom: 3px solid black;
-  font-size: 80px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-
-table {
-  width: 70%;
-  text-align: center;
-}
-
 a {
   color: black;
   text-decoration: none;
   font-size: 30px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato";
 }

@@ -1,25 +1,96 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta charset="utf-8">
+  <title>Graphic</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-	<link rel="stylesheet" href="css/stylesheet.css">
-<title>Grafik</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Pompiere" rel="stylesheet">
 </head>
 
-<body class="grafik">
+<body class="graphic">
 	<nav class="side">
-		<ul>
-			<li><a href="home.html">Home</a></li>
-			<li><a href="about_me.html">About me</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="contact.html">Contact</a></li>
+		<!-- <h1 class="center">Svenja Schulz</h1> -->
+		<ul class="flex-container">
+			<li class="dropdown flex-item">
+				<a href="home.html">Home</a>
+				<li class="dropdown flex-item">
+				<a href="#">About me</a>
+				<ul class="dropdown-content">
+					<li><a href="about_me.html">About</a></li>
+					<li><a href="cv.html">CV</a></li>
+				</ul>
+			</li>
+			<li class="dropdown flex-item">
+				<a href="#">Gallery</a>
+				<ul class="dropdown-content">
+					<li><a href="graphic.html">Graphic</a></li>
+					<li><a href="typography.html">Typography</a></li>
+					<li><a href="photography.html">Photography</a></li>
+				</ul>
+			</li>
+			<li class="dropdown flex-item">
+				<a href="contact.html">Contact</a>
+			</li>
+			</li>
 		</ul>
 	</nav>
-	<div class="container">
+  <div class="container">
+    <h1 class="title">GRAFIK</h1>
 
-	</div>
+    <div class="row">
+      <div class="two_thirds left">
+        <div class="geschaeftsausstattung image_parent">
+          <img src="images/Graphic/geschäftsausstattung.jpg" alt="">
+          <div class="caption">
+            Geschäftsausstattung
+          </div>
+        </div>
+      </div>
+
+      <div class="third merchandise image_parent left">
+        <img src="images/Graphic/merchandise.jpg" alt="">
+        <div class="caption">
+          Merchandise
+        </div>
+      </div>
+    </div>
+
+      <div class="clear"></div>
+      <div class="row">
+        <div class="third-margin left">
+        <div class="imagebroschuere image_parent">
+          <img src="images/Graphic/imagebroschüre.jpg" alt="">
+          <div class="caption">
+            Imagebroschüre
+          </div>
+        </div>
+
+      </div>
+      <div class="third-margin left">
+      <div class="zeichenentwicklung image_parent">
+        <img src="images/Graphic/zeichenentwicklung.jpg" alt="">
+        <div class="caption">
+          Zeichenentwicklung
+        </div>
+      </div>
+      </div>
+
+      <div class="third-margin left">
+        <div class="screendesign image_parent">
+          <img src="images/Graphic/screendesign.jpg" alt="">
+          <div class="caption">
+            Screendesign
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+  </div>
 
 </body>
 </html>
