@@ -94,6 +94,11 @@ body.home .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
 
+body.home [class*="item"] {
+  padding: 0 !important;
+
+}
+
 /*
 ABOUT
 */
@@ -443,7 +448,7 @@ Generic
 }
 
 .flex-item {
-  /*flex-grow: 1;*/
+  flex-grow: 1;
 }
 
 .clear {
@@ -593,7 +598,7 @@ nav.side .dropdown-content{
 
 nav.side ul .dropdown{
   margin: 0;
-  padding: 0 20px 0 0;
+  padding: 10px 20px 0 0;
 }
 nav.side ul li{
   display: block;
@@ -611,6 +616,17 @@ nav.side ul .dropdown-content{
 
 nav ul{
   -webkit-padding-start: 0;
+}
+
+nav.side ul li a{
+  font-size: 22px;
+  font-family: "Lato";
+
+}
+
+nav.side .dropdown-content li a{
+  font-size: 16px;
+  font-family: "lato";
 }
 
 
@@ -646,6 +662,8 @@ svg {
 .right {
   float: right;
   width: 50%;
+  position: relative;
+  bottom: 18%;
 }
 
 a {
