@@ -386,6 +386,10 @@ body.photography .image_parent.grid.full-width {
   height:400px;
 }
 
+body.photography .row {
+  height:0;
+}
+
 /*
 Contact
 */
